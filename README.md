@@ -6,9 +6,9 @@ Taiga is a clean, simple, Mailbox-inspired theme for N1 that allows you to focus
 
 # Taigabox
 
-Taigabox is a version of Taiga more.. mailboxified (?)
+Taigabox is a more.. mailboxified (?) version of Taiga
 
-![](./taigabox.png)
+![taigabox](./taigaox.png)
 
 
 ## Installing
