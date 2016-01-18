@@ -1,4 +1,5 @@
 @import "variables";
+@import "ui-variables";
 
 /**
  * Buttons
@@ -7,29 +8,37 @@
   box-shadow: none !important;
   background: @white !important;
   border: 1px solid @taiga-light !important;
-  border-radius: @base-border-radius !important;
   cursor: pointer !important;
-  margin-left: 4.25px;
+  margin-left: @toolbar-btns-margin-left;
 }
 
 .popover-container .category-picker{
-  margin-left: 4.25px;
+  margin-left: @toolbar-btns-margin-left;
 }
 
 .search-bar{
-  width: 98.5%;
+  width: @search-bar-width;
+  .menu .header-container input.empty{
+    text-align: center;
+    background-color: @search-input-bg;
+    border: none;
+  }
 }
 
 .sheet-toolbar{
+  border: none;
+  margin-bottom: 8px;
   .btn-toolbar{
-    border:none!important;
+    border-radius: @btn-border-radius!important;
+    padding: @btn-padding;
+    height: 36px;
   }
   .message-toolbar-items{
-    order: -50;
-    padding-left: 10px;
+    order: @toolbar-items-order;
+    padding-left: @toolbar-padding-left;
   }
   .btn img.content-mask{
-    background-color: #555;
+    background-color: @icon-bg-color;
   }
 }
 

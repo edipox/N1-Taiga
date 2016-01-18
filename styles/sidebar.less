@@ -1,17 +1,25 @@
 @import "variables";
 
-#account-switcher{ 
-  border:none; 
+#account-switcher{
+  border:none;
  .primary-item .name {
     color: @taiga-dark;
   }
 }
-
+[data-column]{
+  margin-bottom: 20px;
+}
+[data-column="0"]{
+  padding-bottom: 12px;
+}
+[data-column="0"] .item-container, #account-switcher{
+  background: @sidebar-bg!important;
+}
 .account-sidebar-sections {
-  background-color: @white !important;
-
+  background: @sidebar-bg;
   section {
     .item-container {
+      background: @sidebar-bg;
       margin: 0 10px !important;
 
       .disclosure-triangle {
