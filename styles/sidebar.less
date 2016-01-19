@@ -6,14 +6,46 @@
     color: @taiga-dark;
   }
 }
+
+.btn.btn-toolbar.item-compose{
+  background: @sidebar-bg!important;
+  border-color: @sidebar-fg-color!important;
+  img.content-mask{
+    background-color: @sidebar-fg-color!important;
+  }
+}
+
 [data-column]{
   margin-bottom: 20px;
 }
-[data-column="0"]{
+
+[name="Toolbar"] [data-column="0"], [data-column="0"].column-RootSidebar{
+  color: @sidebar-fg-color;
+  .scrollbar-track{
+    border:none;
+    background: @sidebar-bg;
+  }
   padding-bottom: 12px;
+  background: @sidebar-bg;
 }
+
+#account-switcher .primary-item .name{//, #account-switcher .item, #account-sidebar .item {
+  color: @sidebar-fg-color;
+}
+
 [data-column="0"] .item-container, #account-switcher{
   background: @sidebar-bg!important;
+  color: @sidebar-fg-color;
+}
+
+#account-switcher, #account-sidebar{
+  background: @sidebar-bg;
+}
+
+
+
+#account-switcher .heading, #account-sidebar .heading{
+  color: @sidebar-heading-fg;
 }
 .account-sidebar-sections {
   background: @sidebar-bg;
@@ -28,12 +60,12 @@
 
       .item {
         padding: 0 10px !important;
-        color: @taiga-light !important;
+        color: @sidebar-fg-color !important;
         cursor: pointer !important;
 
         .item-count-box {
           background: transparent !important;
-          color: @taiga-light !important;
+          color: @sidebar-fg-color !important;
           box-shadow: 0 0.5px 0 @taiga-light, 0 -0.5px 0 @taiga-light, 0.5px 0 0 @taiga-light, -0.5px 0 0 @taiga-light !important;
         }
 

@@ -1,4 +1,5 @@
 @import "variables";
+@import "ui-variables";
 
 .ignore-in-parent-frame {
   body {
@@ -6,5 +7,35 @@
   }
   img {
     color: @taiga-dark;
+  }
+}
+
+.window-type-composer{
+  [data-column="0"], .composer-full-window .composer-inner-wrap .composer-action-bar-wrap{
+    background: @white;
+    .btn.btn-toolbar.narrow{
+      border-radius: 999px;
+    }
+    .composer-inner-wrap .composer-action-bar-wrap .btn{
+      border-radius: 999px;
+      height: 42px;
+      padding: 12px;
+      &.narrow{
+        padding: 4px;
+      }
+    }
+
+
+
+    .btn.btn-toolbar.btn-emphasis.btn-text.btn-send{
+      border-radius: 2px;
+    }
+  }
+  background: @white;
+  .sheet-toolbar{
+    background: @sidebar-bg;
+  }
+  .sheet-toolbar .item-container .window-title{
+    color: @white;
   }
 }
