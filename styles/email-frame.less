@@ -9,7 +9,19 @@
     color: @taiga-dark;
   }
 }
-
+.composer-action-bar-wrap{
+  .btn-send{
+    margin-top: 6px;
+  }
+  .btn.btn-toolbar:not(.btn-send){
+    border-radius: 999px;
+    height: 42px;
+    padding: 12px;
+    &.narrow{
+      padding: 4px;
+    }
+  }
+}
 .window-type-composer{
   [data-column="0"], .composer-full-window .composer-inner-wrap .composer-action-bar-wrap{
     background: @white;
